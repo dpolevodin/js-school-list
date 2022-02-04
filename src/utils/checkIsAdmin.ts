@@ -1,7 +1,7 @@
-export const checkIsAdmin = ( username: string | number, password: string | number) => {
+export const checkIsAdmin = ( values: {username: string, password: string}) => {
   const currentUsername = "admin";
   const currentPassword = "admin";
-  if (username === currentUsername && password === currentPassword) {
+  if (values.username === currentUsername && values.password === currentPassword) {
     return true;
   }
 };
